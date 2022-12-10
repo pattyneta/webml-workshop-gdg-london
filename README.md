@@ -25,10 +25,17 @@ Follow these steps:
 
 1. Open index.html and locate this comment:
  ```<!-- Add your Teachable Machine model here --> ```
+ 
+2. Remove the following lines:
 
-2. Replace the comment with the Teachable Machine code snippet, then let's edit that same code you just pasted
+```<div>Teachable Machine Image Model</div>
+<button type="button" onclick="init()">Start</button>
+<div id="webcam-container"></div>
+<div id="label-container"></div> ```
 
-3. Under the line that contains the URL imported, copy the following code:
+3. Replace the comment with the Teachable Machine code snippet, then let's edit that same code you just pasted
+
+4. Under the line that contains the URL imported, copy the following code:
 
     ```
     let robotContainter = document.getElementById("robot-container");
@@ -39,7 +46,7 @@ Follow these steps:
     robotContainter.appendChild(robotFace);
     robotContainter.appendChild(robotTalk);
     ```
-4. Then, on the same file, replace the content of the function predict() with the following code:
+5. Then, on the same file, replace the content of the function predict() with the following code:
 
       
         // predict can take in an image, video or canvas html element
