@@ -24,14 +24,18 @@ Follow these steps:
 ## Update the code imported from the Teachable Machine
 
 1. Open index.html and locate this comment:
- ```<!-- Add your Teachable Machine model here --> ```
+ ```
+ <!-- Add your Teachable Machine model here --> 
+ ```
  
 2. Remove the following lines:
 
-```<div>Teachable Machine Image Model</div>
+```
+<div>Teachable Machine Image Model</div>
 <button type="button" onclick="init()">Start</button>
 <div id="webcam-container"></div>
-<div id="label-container"></div> ```
+<div id="label-container"></div>
+ ```
 
 3. Replace the comment with the Teachable Machine code snippet, then let's edit that same code you just pasted
 
