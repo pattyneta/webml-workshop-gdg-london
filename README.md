@@ -23,14 +23,11 @@ Follow these steps:
 
 ## Update the code imported from the Teachable Machine
 
-1. Open index.html and locate the comment where you should paste the Teachable Machine code snippet, then let's edit that same code you just pasted
-2. Remove the following lines:
-  ```
-  <div>Teachable Machine Image Model</div>
-  <button type="button" onclick="init()">Start</button>
-  <div id="webcam-container"></div>
-  <div id="label-container"></div>/div>
-  ```
+1. Open index.html and locate this comment:
+<!-- Add your Teachable Machine model here -->
+
+2. Replace the comment with the Teachable Machine code snippet, then let's edit that same code you just pasted
+
 3. Under the line that contains the URL imported, copy the following code:
 
     ```
@@ -57,7 +54,14 @@ Follow these steps:
             } else if ((prediction[i].className === 'angry') && (prediction[i].probability.toFixed(2) >= 0.90)) {
                 robotFace.src = "/images/angry.png";
                 robotTalk.innerText = "Destroy! Destroy! Destroy!"
+            } else if ((prediction[i].className === 'sad') && (prediction[i].probability.toFixed(2) >= 0.90)) {
+                robotFace.src = "/images/sad.png";
+                robotTalk.innerText = "Why so sad??"
+            } else if ((prediction[i].className === 'surprised') && (prediction[i].probability.toFixed(2) >= 0.90)) {
+                robotFace.src = "/images/angry.png";
+                robotTalk.innerText = "OMG!!!!!!"
             }
+            
             robotContainter.appendChild(robotFace);
             robotContainter.appendChild(robotTalk);
         }
