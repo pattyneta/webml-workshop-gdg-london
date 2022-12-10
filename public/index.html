@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Emotion Recognition for Human-Robot Interaction using TensorFlow.js
+    </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="nescss">
+      <div class="container nes-container is-rounded with-title">
+        <h1 class="title">
+          Emotion Recognition for Human-Robot Interaction using TensorFlow.js
+        </h1>
+        <button
+          type="button"
+          class="nes-btn is-primary"
+          style="padding: 1rem; margin: 30px 0 30px 0; width: 100%"
+          onclick="init()"
+        >
+          Click here so the Robot can understand your emotions! :)
+        </button>
+
+        <div id="human-robot-love" class="nes-container is-rounded">
+          <div id="human-container">
+            <div id="webcam-container"></div>
+            <div id="label-container"></div>
+          </div>
+
+          <div id="robot-container"></div>
+        </div>
+
+        <div id="teachable-machine-model">
+          <!-- Add your Teachable Machine model here -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

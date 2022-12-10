@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#nescss > .container {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+body {
+  padding: 0 2rem;
+  margin: 0 2rem;
+}
+
+#robot-container img {
+  image-rendering: pixelated;
+}
+
+#human-robot-love {
+  display: flex;
+}
+
+#human-container {
+  display: inline-block;
+  width: 50%;
+}
+
+#robot-container {
+  display: inline-block;
+  width: 50%;
+}
