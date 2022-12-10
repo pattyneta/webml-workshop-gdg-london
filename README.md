@@ -24,7 +24,7 @@ Follow these steps:
 ## Update the code imported from the Teachable Machine
 
 1. Open index.html and locate this comment:
-<!-- Add your Teachable Machine model here -->
+ ```<!-- Add your Teachable Machine model here --> ```
 
 2. Replace the comment with the Teachable Machine code snippet, then let's edit that same code you just pasted
 
