@@ -12,7 +12,7 @@ Follow these steps:
 9. Go to teachablemachine.withgoogle.com
 10. Click "Get Started"
 11. Select "Image Project" and then "Standard image model"
-12. Create 4 classes with the following names: angry - happy - sad - surprised - waiting
+12. Create 4 classes with the following names: angry - happy - sad - surprised
 13. Train each of the classes showing their respective emotion. To do this, click the button "Webcam"
 14. Now that you have your training dataset, click on "Train Model"
 15. Then you can preview your model!
