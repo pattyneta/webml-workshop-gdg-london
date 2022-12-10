@@ -58,7 +58,7 @@ Follow these steps:
                 robotFace.src = "/images/sad.png";
                 robotTalk.innerText = "Why so sad??"
             } else if ((prediction[i].className === 'surprised') && (prediction[i].probability.toFixed(2) >= 0.90)) {
-                robotFace.src = "/images/angry.png";
+                robotFace.src = "/images/surprised.png";
                 robotTalk.innerText = "OMG!!!!!!"
             }
             
